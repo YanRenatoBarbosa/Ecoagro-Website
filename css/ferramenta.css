@@ -1,0 +1,260 @@
+.not-cursor {
+    cursor: default;
+    font-size: 1.14rem;
+}
+
+.invisible {
+    display: none;
+}
+
+main .container {
+    width: 60%;
+}
+
+main .conteudo-principal {
+    min-height: 80vh;
+}
+
+.conteudo-principal h2 {
+    padding: 0 0.8rem 0.3rem;
+    width: 100%;
+    border-bottom: 2px solid gray;
+    font-size: 2rem;
+    font-weight: 500;
+    margin-bottom: 1.5rem;
+}
+
+.formAddInputs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form-Wrapper {
+    display: flex;
+    width: 100%;
+    margin-bottom: 2.5rem;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.input-container {
+    width: 55%;
+}
+
+.input-container .wrapperInput {
+    margin-top: 1.5rem;
+    position: relative;
+}
+
+.input-container .wrapperInput input {
+    border-bottom: 2px solid silver;
+    width: 100%;
+    height: 2.5rem;
+    background: none;
+    padding-left: 7px;
+    transition: all .5s;
+}
+
+.input-container .wrapperInput input:focus,
+.input-container .wrapperInput input:valid {
+    border-bottom: 2px solid green;
+}
+
+.input-container .wrapperInput label {
+    position: absolute;
+    left: 7px;
+    bottom: 9px;
+    font-size: 1rem;
+    pointer-events: none;
+    transition: all .5s;
+}
+
+.input-container .wrapperInput .wrong:focus,
+.input-container .wrapperInput .wrong:valid, 
+.input-container .wrapperInput .wrong {
+    border-bottom: 2px solid red;
+}
+
+
+.input-container .wrapperInput .wrong:focus ~ label,
+.input-container .wrapperInput .wrong:valid ~ label,
+.input-container .wrapperInput .wrong ~ label {
+    color: red;
+    font-size: 0.9rem;
+    bottom: 34px;
+}
+
+.input-container .wrapperInput input:focus ~ label,
+.input-container .wrapperInput input:valid ~ label {
+    color: green;
+    font-size: 0.9rem;
+    bottom: 34px;
+}
+
+.select-container {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.select-container .wrapperSelect {
+    margin-top: 1.5rem;
+    width: 70%;
+}
+
+.select-container .wrapperSelect select {
+    border-bottom: 2px solid silver;
+    width: 100%;
+    height: 2.5rem;
+    background: none;
+    font-size: 1rem;
+}
+
+.select-container .wrapperSelect select:hover {
+    cursor: pointer;
+}
+
+/* Tipo de Irrigação */
+
+.tipo-irrigacao-container {
+    display: flex;
+    align-items: center;
+    width: 55%;
+    margin-bottom: 1rem;
+}
+
+.tipo-irrigacao-container p {
+    display: inline-block;
+    font-size: 1.1rem;
+    margin-right: 2.5%;
+}
+
+.tipo-irrigacao-container .wrapperSelect {
+    width: auto;
+}
+
+.tipo-irrigacao-container .wrapperSelect select {
+    border-bottom: 2px solid silver;
+    width: 12.813rem;
+    height: 2.5rem;
+    background: none;
+    font-size: 1rem;
+}
+
+.tipo-irrigacao-container .wrapperSelect select:hover {
+    cursor: pointer;
+}
+
+.cultura-container {
+    display: flex;
+    width: 37.45%;
+    align-items: center;
+    padding-right: 6%;
+}
+
+.cultura-container p {
+    font-size: 1.1rem;
+    margin-right: 3.5%;
+}
+
+.cultura-container #SelectCultura {
+    border-bottom: 2px solid silver;
+    height: 2.5rem;
+    font-size: 1rem;
+    flex-grow: 1;
+    background: none;
+}
+
+.line {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 2rem;
+    align-items: center;
+}
+
+.btnAdd {
+    border-radius: 3px;
+    background: green;
+    color: white;
+    padding: 10px;
+    width: 30%;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.btnAdd:hover {
+    background: rgb(12, 71, 25);
+}
+
+.goToAnalise {
+    text-decoration: underline;
+}
+
+.goToAnalise:hover {
+    cursor: pointer;
+}
+
+@media (max-width: 425px) {
+    main .container {
+        width: 90%;
+    }
+
+    .conteudo-principal h2 {
+        font-size: 1.57rem;
+    }
+
+    .form-Wrapper {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .input-container {
+        width: 95%;
+        text-align: center;
+    }
+
+    .input-container .wrapperInput {
+        margin-top: 1rem;
+    }
+
+    .select-container {
+        width: 95%;
+        margin-top: 2.5rem;
+    }
+
+    .select-container .wrapperSelect {
+        margin-top: 0.5rem;
+        width: 100%;
+    }
+
+    .tipo-irrigacao-container {
+        width: 95%;
+    }
+
+    .tipo-irrigacao-container .wrapperSelect {
+        width: auto;
+    }
+
+    .cultura-container {
+        width: 95%;
+        padding: 0;
+    }
+
+    .line {
+        display: block;
+    }
+
+    .line button {
+        display: block;
+        margin: 0 auto;
+        margin-bottom: 1rem;
+        width: 75%;
+    }
+
+    .goToAnalise {
+        margin: 0 0.7rem;
+    }
+}

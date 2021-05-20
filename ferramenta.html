@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/ferramenta.css">
+    <link rel="stylesheet" href="./css/inputs.css">
+    <title>Ferramenta</title>
+</head>
+<body>
+
+  <header class="cabecalho-principal">
+    <div class="container">
+      <h1><a href="index.html">Ecoagro</a></h1>
+
+      <nav class="cabecalho-principal-nav">
+        <a href="./sobre.html">Sobre</a>
+        <a href="./contato.html">Contato</a>
+        <a href="./login&sign.html">Login</a>
+      </nav>
+
+    </div>
+  </header>
+
+  <main>
+    <section class="conteudo-principal container">
+      <h2>Adicionar tensiometros</h2>
+
+      <form id="formAddInputs">
+
+        <div class="form-Wrapper">
+            <div class="input-container">
+                <p class="not-cursor">Quantos tensiômetros adicionar na análise?</p>
+
+                <div class="wrapperInput">
+                    <input type="number" name="inputAddTensios" class="inputAddTensios" required>
+                    <label>Quantidade:</label>
+                </div>
+            </div>
+
+
+            <div class="select-container">
+                <p class="not-cursor">Selecione a Profundidade</p>
+
+                <div class="wrapperSelect">
+                    <select name="selectAdd" id="selectAdd">
+                        <option value="0">Tensiometro Raso</option>
+                        <option value="1">Tensiometro Profundo</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+
+        <div class="form-Wrapper">
+
+            <div class="tipo-irrigacao-container">
+                <p class="not-cursor">Tipo de irrigação:</p>
+
+                <div class="wrapperSelect">
+                    <select name="selectType" id="selectType">
+                        <option disabled selected>Selecione</option>
+                        <option value="0">Sistema por Aspersão</option>
+                        <option value="1">Sistema por Sulco</option>
+                        <option value="2">Sistema por Gotejamento</option>
+                    </select>
+                </div>
+            </div>
+            
+            <div class="cultura-container">
+              <p class="not-cursor">Cultura:</p>
+              
+              <select name="SelectCultura" id="SelectCultura">
+                <option value="Inválido" disabled selected>Selecione</option>
+                <option value="alface">Alface</option>
+                <option value="batata">Batata</option>
+                <option value="tomate">Tomate</option>
+                <option value="cebola">Cebola</option>
+              </select>
+            </div>
+        </div>
+        
+        <div class="line">
+          <button type="submit" class="btnAdd" onclick="ctrlAddInputs.add(event);">Adicionar Formulários</button>
+          <a class="goToAnalise invisible" onclick="ctrlAddInputs.showInfo()">Ver Quantidade</a>
+          <a class="goToAnalise invisible" onclick="ctrlAddInputs.goToAnalise()">Ir para a analise</a>
+        </div>
+        
+      </form>
+
+    </section>
+  </main>
+
+  <footer class="rodape-principal">
+
+    <div class="rodape-principal-conteudo container">
+
+      <div class="rodape-conteudo-wrap menu">
+        <h3> <a href="./index.html">Menu</a> </h3>
+
+        <br>
+        <a href="./sobre.html">Sobre Nós</a>
+        <a href="./contato.html">Contato</a>
+        <a href="./index.html">Home Page</a>
+        <a href="./propiedadesList.html">Propiedades</a>
+        <a href="./login&sign.html">Login</a>
+      </div>
+
+      <div class="rodape-conteudo-wrap frase">
+        <h3> <a href="./index.html">Ecoagro</a> </h3>
+
+        <br><br>
+
+        <p>Quando o poço está seco, aí nós sabemos o valor da água.</p>
+        <p>- Benjamin Franklin</p>
+      </div>
+
+    </div>
+
+    <div class="bottom-bar">
+      <a href="https://github.com/YanRenatoBarbosa/Ecoagro-Website" target="_blank">GitHub</a>
+      <a href="./error.html">Reportar Erro!</a>
+    </div>
+
+  </footer>
+
+  <script src="./js/app/helpers/tools.js"></script>
+  <script src="./js/app/helpers/calcularmediasHelper.js"></script>
+  <script src="./js/app/services/inputsFactory.js"></script>
+  <script src="./js/app/view/addInputsView.js"></script>
+  <script src="./js/app/services/ConnectionFactory.js"></script>
+  <script src="./js/app/models/DataBaseModel.js"></script>
+  <script src="./js/app/controllers/add-InputsControler.js"></script>
+  <script src="./js/app/models/inputsMediaModel.js"></script>
+  <script src="./js/app/controllers/calcularMediaController.js"></script>
+  <script src="./js/ferramenta.js"></script>
+
+</body>
+</html>
+

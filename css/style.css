@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    outline: none;
+    text-decoration: none;
+    font-size: 100%;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    width: 70%;
+    margin: 0 auto;
+}
+
+.cabecalho-principal {
+    background: rgb(12, 71, 25);
+    height: 11vh;
+    margin-bottom: 3rem;
+}
+
+.cabecalho-principal .container {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cabecalho-principal .container h1 a {
+    font-size: 2rem;
+    color: white;
+    font-weight: 500;
+}
+
+.cabecalho-principal-nav {
+    width: 40%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.cabecalho-principal-nav a {
+    font-size: 1.1rem;
+    color: white;
+}
+
+
+/* Rodapé */
+.rodape-principal {
+    height: 19rem;
+    background: rgb(12, 71, 25);
+}
+
+.rodape-principal-conteudo {
+    display: flex;
+    justify-content: space-between;
+    height: 90%;
+    padding-top: 2rem;
+}
+
+.rodape-conteudo-wrap {
+    width: 50%;
+    text-align: center;
+}
+
+.rodape-principal-conteudo .menu {
+    display: flex;
+    flex-direction: column;
+    text-align: initial;
+}
+
+.rodape-principal-conteudo .frase {
+    color: white;
+}
+
+.rodape-conteudo-wrap h3 a {
+    font-size: 1.3rem;
+    color: white;
+    font-weight: 500;
+}
+
+.rodape-principal-conteudo .menu a {
+    color: white;
+    margin-top: 0.2rem;
+}
+
+.rodape-principal-conteudo .frase p:last-child {
+    margin-top: 1rem;
+    text-align: right;
+}
+.bottom-bar {
+    display: flex;
+    background: #013c03;
+    height: 10%;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.bottom-bar a {
+    color: white;
+}
+
+
+@media (max-width: 425px) {
+
+    .cabecalho-principal {
+        margin-bottom: 1.5rem;
+    }
+
+    .cabecalho-principal .container {
+        justify-content: center;
+    }
+
+    .cabecalho-principal-nav {
+        display: none;
+    }
+
+    .rodape-principal {
+        height: auto;
+    }
+
+    .rodape-principal .container {
+        width: 90%;
+    }
+
+    .rodape-principal-conteudo {
+        padding-bottom: 2rem;
+    }
+
+    .rodape-principal-conteudo .menu {
+        display: none;
+    }
+    
+    .rodape-principal-conteudo .frase {
+        width: 100%;
+    }
+}

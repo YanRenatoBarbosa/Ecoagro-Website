@@ -1,0 +1,119 @@
+.bad {
+    color: red;
+}
+
+.good {
+    color: green;
+}
+
+.cabecalho-principal {
+   margin-bottom: 2rem;
+}
+
+main .container {
+    width: 50%;
+    padding-bottom: 4rem;
+}
+
+main .container h2 {
+    padding-bottom: .2em;
+    border-bottom: 1px solid #4e4d4d;
+    margin-bottom: 1.5rem;
+    font-size: 1.6rem;
+    font-weight: 400;
+}
+
+main .container h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+    font-weight: 400;
+}
+
+.all-cards {
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 2rem;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    width: 10.938rem;
+    height: 14.688rem;
+    box-shadow: 0px 0px 5px silver;
+    margin-right: 14px;
+}
+
+.all-cards .card:last-child {
+    margin-right: 0;
+}
+
+.card-infos {
+    height: 50%;
+    padding: 1.59rem 0.7rem 1.2rem;
+}
+
+.card-infos span {
+    display: block;
+    line-height: 100%;
+}
+
+.card-title {
+    line-height: 1;
+    font-size: 0.89rem;
+    margin-bottom: 1rem;
+}
+
+.card-value {
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.card-specification {
+    font-size: 0.74rem;
+    text-align: center;
+    color: green;
+}
+
+.card-results {
+    height: 50%;
+    padding: 1.5rem 0.7rem 0.7rem;
+    text-align: center;
+}
+
+.conteudo-bot p {
+    font-size: 1.2rem;
+}
+
+@media (max-width: 425px) {
+    main .container {
+        width: 95%;
+        text-align: center;
+    }
+
+    .conteudo-top {
+        text-align: center;
+    }
+
+    .all-cards {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .card {
+        margin-right: 0;
+        width: 10rem;
+    }
+
+    .all-cards .card:first-child {
+        margin: 0 2rem 1rem;
+    }
+
+    .all-cards .card:nth-child(2) {
+        margin-right: 3%;
+    }
+
+    .conteudo-bot {
+        text-align: center;
+    }
+}

@@ -1,0 +1,112 @@
+main .wraper {
+    width: 100%;
+    height: 130px;
+    padding: 25px 0 16px;
+}
+
+main .wraper p {
+    display: block;
+    pointer-events: none;
+}
+
+main .data {
+    height: 40px;
+    width: 100%;
+    margin-top: 16px;
+    position: relative;
+}
+
+.InputWraperLeft {
+    display: inline-block;
+    height: 100%;
+    width: 60%;
+}
+
+.inputPotencial {
+    width: 100%;
+    height: 100%;
+    border-bottom: 2px solid silver;
+    background: none;
+    font-size: 17px;
+}
+
+.inputPotencial:focus,
+.inputPotencial:valid {
+    border-bottom: 2px solid green;
+}
+
+.inputPotencial:focus ~ label,
+.inputPotencial:valid ~ label {
+
+    transform: translateY(-20px);
+    font-size: 15px;
+    color: green;
+}
+
+main .data label{
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    color: gray;
+    pointer-events: none;
+    transition: all .3s ease;
+}
+
+main .InputWraperRight {
+    float: right;
+    height: 100%;
+    width: 33%;
+}
+
+main .selectMedidas {
+    width: 100%;
+    height: 100%;
+    border-bottom: 2px solid silver;
+    background: none;
+    font-size: 17px;
+}
+
+.LineAux {
+    display: flex;
+    justify-content: center;
+}
+
+.btnCalcular {
+    width: 20%;
+    height: 2rem;
+    margin-bottom: 4rem;
+    border: none;
+    border-radius: 3px;
+    background: green;
+    color: white;
+    cursor: pointer;
+    transition: .5s;
+}
+
+@media (max-width: 425px) {
+    main .wraper {
+        height: auto;
+        padding: 0;
+    }
+
+    .InputWraperLeft {
+        display: block;
+        width: 100%;
+    }
+
+    main .InputWraperRight {
+        float: none;
+        width: 94%;
+        margin: 1rem auto 2.5rem;
+    }
+
+    main .data label {
+        font-size: 0.89rem;
+    }
+
+    .btnCalcular {
+        width: 70%;
+        height: 2.3rem;
+    }    
+
+}

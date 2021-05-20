@@ -1,0 +1,163 @@
+.cabecalho-principal {
+    margin: 0;
+}
+
+.banner {
+    width: 100%;
+    margin-bottom: 2rem;
+}
+
+main .container {
+    width: 90%;
+    padding-bottom: 2rem;
+}
+
+.conteudo-main {
+    display: flex;
+    align-items: center;
+}
+
+.conteudo-main .card{
+    text-align: center;
+    height: 16rem;
+    border-radius: 5px;
+    padding: 1.1rem 0;
+}
+
+.conteudo-main .dicas {
+    width: 65%;
+    background: #f1f1f1;
+}
+
+.conteudo-main .dicas h2 {
+    font-size: 1.5rem;
+}
+
+.conteudo-main .dicas .wrap {
+    display: flex;
+    justify-content: center;
+    padding-top: 1rem;
+    height: 7.5rem;
+    margin-bottom: 1rem;
+}
+
+.dicas .wrap .dica-amostra {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+    width: 42%;
+    border: 2px solid black;
+    border-radius: 5px;
+    padding: 0.25rem 0;
+}
+
+.dicas .wrap .dica-amostra:first-child {
+    margin-right: 1.5rem;   
+}
+
+.dicas .wrap .dica-amostra:nth-child(1):hover {
+    border: 3px solid black;
+    cursor: pointer;
+}
+
+.dicas .wrap .dica-amostra:nth-child(2):hover {
+    border: 3px solid black;
+    cursor: pointer;
+}
+
+.dicas .wrap .dica-amostra p {
+    width: 53%;
+}
+
+.dicas .wrap .dica-amostra img {
+    height: 100%;
+}
+
+.dicas .mais-dicas {
+    color: black;
+    text-decoration: underline;
+}
+
+.conteudo-main .options {
+    width: 33%;
+    margin-left: 2%;
+    background: #848484;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 3% 0;
+    align-items: center;
+}
+
+.conteudo-main .options h2 {
+    background: #545454;
+    width: 83%;
+    padding: 6px;
+    border-radius: 6px;
+}
+
+.conteudo-main .options a {
+    color: white;
+    font-weight: 500;
+}
+
+.conteudo-main .options a:hover {
+    text-decoration: underline;
+}
+
+
+@media (max-width: 915px) {
+    main .container {
+        width: 95%;
+    }
+
+    .dicas .wrap .dica-amostra p{
+        font-size: 0.89rem;
+    }
+}
+
+@media (max-width: 1024px) {
+    .dicas .wrap .dica-amostra p{
+        line-height: 1.4;
+    }
+}
+
+@media (max-width: 425px) {
+
+
+    .banner {
+        display: none;
+    }
+
+    main {
+        margin-top: 1.67rem;
+    }
+
+    main .container {
+        padding-bottom: 3rem;
+    }
+    
+    .conteudo-main {
+        flex-direction: column-reverse;
+    }
+
+    .conteudo-main .options {
+        width: 95%;
+        margin-left: 0;
+        margin-bottom: 1.5rem;
+    }
+
+    .conteudo-main .dicas {
+        width: 95%;
+    }
+
+    .dicas .wrap .dica-amostra:first-child {
+        display: none;
+    }
+
+    .dicas .wrap .dica-amostra:last-child {
+        width: 75%;
+    }
+
+}

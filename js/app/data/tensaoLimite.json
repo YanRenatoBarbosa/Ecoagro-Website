@@ -1,0 +1,24 @@
+{ "tensão-limite":[
+    {
+        "group":"Aspersao", "id": 1, "data":[ 
+            {"id": 1.1, "tensao": [10, 20], "hortalicas": ["Aipo", "alface", "alho", "cebola", "cenoura", "morango", "rabanete"]},
+            {"id": 1.2, "tensao": [20, 40], "hortalicas": ["Abóbora", "abobrinha", "alho-porro", "batata", "berinjela", "brócolos", "espinafre", "feijão-vagem", "jiló", "melancia", "melão", "nabo", "pimentão"]},
+            {"id": 1.3, "tensao": [40, 70], "hortalicas": ["Batata-doce", "beterraba", "couve", "couve-flor", "mandioquinha-salsa", "milho-doce", "pepino", "pimenta", "quiabo", "repolho", "tomate"]} 
+        ]
+    },
+    
+    {
+        "group":"Sulco", "id": 2, "data":[
+            {"id": 2.1, "tensao": [20, 40], "hortalicas": [ "Abóbora", "abobrinha", "aipo", "alface", "alho", "alho-porro", "batata", "berinjela", "brócolos", "cebola", "cenoura", "espinafre", "feijão-vagem", "jiló", "melancia", "melão", "morango", "nabo", "pimentão", "rabanete"]},
+            {"id": 2.2, "tensao": [40, 70], "hortalicas": [ "Batata-doce", "beterraba", "couve", "couve-flor", "mandioquinha-salsa", "milho-doce", "pepino", "pimenta", "quiabo", "repolho", "tomate" ]}
+        ]
+    }, 
+    
+    {
+        "group":"Gotejamento", "id": 3, "data":[
+            {"id": 3.1, "tensao": [10, 20], "hortalicas": [ "Abóbora", "abobrinha", "aipo", "alface", "alho", "alho-porro", "batata", "berinjela", "brócolos", "cebola", "cenoura", "espinafre", "feijão-vagem", "jiló", "melancia", "melão", "morango", "nabo", "pimentão", "rabanete" ]},
+            {"id": 3.2, "tensao": [20, 40], "hortalicas": [ "Batata-doce", "beterraba", "couve", "couve-flor", "mandioquinha-salsa", "milho-doce", "pepino", "pimenta", "quiabo", "repolho", "tomate" ]},
+            {"id": 3.3, "tensao": [40, 70], "hortalicas": [ "Ervilha", "grão-de-bico", "lentilha" ]}
+        ]
+    }
+]}
